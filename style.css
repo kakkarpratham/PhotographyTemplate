@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oleo+Script:wght@700&family=Shrikhand&family=Teko:wght@500&display=swap');
+
+.navbar {
+  width: 100%;
+  background-color: #e1b382;
+  overflow: auto;
+  position: sticky;
+}
+
+.navbar-brand {
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: rgb(242, 85, 0);
+  
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+#name {
+  color: #c89666;
+  align-items: center;
+  max-height: fit-content;
+  max-width: fit-content;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin: auto;
+  width: 640px;
+  padding: 50px;
+  text-align: center;
+  text-decoration: underline ;
+   
+}
+.image-template{
+  margin-top: auto;
+  
+}
+.myProducts-gallery img {
+  height: 92px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: .5;
+  
+}
+
+.myProducts-gallery img:hover {
+  opacity: 1;
+}
+
+.myProducts-gallery {
+  float: left;
+}
+
+.myProducts {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin-top: 60px;
+}
+
+.image-container img {
+  height: 400px;
+  transition: transform 1s;
+}
+
+.image-container img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+.image-container {
+  float: right;
+  padding: 10px;
+
+
+}
+
+/*//////////////////////////image template till here////////*/
+
+
+/*////////////  para ////////////////////////////////*/
+#note {
+  margin-top: 450px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+height: 10vh;
+  background-color:#2d545e;
+  border-radius: 2px;
+  color: #fff;
+  
+
+
+}
+.paragraph{
+  max-width: auto; /* Set a maximum width for the paragraph */
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.mid-section {
+  display: flex;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+
+  /* Set a fixed height for the container */
+  background-color:  #c89666;
+  
+
+}
+
+/* CSS for the image wrappers */
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+/* CSS for the images */
+.image-wrapper img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* CSS for the buttons */
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c89666;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
+}
+
+.button:hover {
+  color:  #c89666;
+  background-color: #fff;
+  font-size: 1rem;
+}
+.image-wrapper.button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c89666;
+  color: #fff;
+  border: none;s
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #12343b;
+}
+
+.testimonial {
+  width: 300px;
+  border: 3px solid #000000;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 7px rgba(67, 65, 65, 0.1);
+  border-radius: 3px;
+  
+}
+
+.testimonial-text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  text-align: right;
+  font-style: italic;
+}
+
+.just-dial-link {
+  display: block;
+  text-align: center;
+  background-color: #ce7d64;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.just-dial-link:hover {
+  background-color: #687f98;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#heading{
+color: #fff;
+font-family: 'Merriweather', serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Teko', sans-serif;
+font-weight: 2rem;
+}

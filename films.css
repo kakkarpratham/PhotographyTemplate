@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oleo+Script:wght@700&family=Permanent+Marker&family=Shrikhand&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:wght@700&family=Oleo+Script:wght@700&family=Permanent+Marker&family=Shrikhand&family=Teko:wght@500&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-link {
+  margin: 10px;
+}
+
+
+
+
+
+
+
+.logo {
+  justify-content: center;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.logo img {
+  display: flex;
+  justify-items: center;
+  border-radius: 50%;
+  width: 60px;
+  /* Adjust the width of the logo as needed */
+  height: 60px;
+  /* Adjust the height of the logo as needed */
+
+
+}
+
+
+
+#logo-name {
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  align-items: center;
+  margin-top: auto;
+
+}
+
+
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff5252;
+  padding: 10px 10px;
+
+
+}
+
+.navbar a {
+
+  float: center;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  justify-content: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links a {
+
+  color: #fff;
+  padding: 0 15px;
+  transition: color 0.3s;
+  font-family: 'Lilita One', cursive;
+  font-family: 'Merriweather', serif;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.4rem;
+  background-color: #ff6f6f;
+  border: 2px solid #eee;
+
+
+}
+
+.nav-links a:hover {
+  color: #f9c31b;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #f93f3f;
+  padding: 0px;
+  /* Use Flexbox for layout */
+  display: flex;
+
+  margin-left: auto;
+  bottom: 0;
+  width: 100%;
+  /* Adjust the height of the footer as per your requirements */
+  height: 60px;
+}
+
+/* Optional: Add media queries to adjust styles for different screen sizes */
+@media (max-width: 768px) {}
+
+
+
+.social-links {
+  display: flex;
+  margin: auto;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  /* Vertically center the icon and text if present */
+  text-decoration: none;
+  margin-right: 10px;
+  /* Optional: Add some space between the social links */
+}
+
+.social-links img {
+  width: 50px;
+  /* Set the width of the icons to your desired size */
+  height: 50px;
+  /* Set the height of the icons to your desired size */
+  margin-right: 5px;
+  /* Optional: Add some space between the icon and the text if present */
+  border-radius: 50%;
+  box-shadow: #333 ();
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  border-radius: 50%;
+  border-color: #333;
+  /* Change border color on hover */
+  transform: scale(1.1);
+  /* Add a slight scale effect on hover */
+}

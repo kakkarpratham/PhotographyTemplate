@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oleo+Script:wght@700&family=Permanent+Marker&family=Shrikhand&family=Teko:wght@500&display=swap');
+
+body {
+  background-color: #eee;
+}
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+  
+
+
+  
+/* Set box-sizing to border-box to include padding and border in element's total width */
+* {
+  box-sizing: border-box;
+}
+
+/* Flexbox layout for the footer */
+.footer {
+  background-color: #f0f0f0; /* Optional: Adding a background color to the footer */
+  padding: 10px; /* Optional: Add some padding to the footer */
+  display: flex;
+  justify-content: center; /* Horizontally center the social links */
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center; /* Vertically center the icon and text if present */
+  text-decoration: none;
+  margin-right: 10px; /* Optional: Add some space between the social links */
+}
+
+.social-links img {
+  width: 50px; /* Set the width of the icons to your desired size */
+  height: 50px; /* Set the height of the icons to your desired size */
+  margin-right: 5px; /* Optional: Add some space between the icon and the text if present */
+  border-radius: 50%;
+  box-shadow: #333 ();
+cursor: pointer;
+}
+.social-links img:hover{
+border-color: #333; /* Change border color on hover */
+  transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
+
+
+
+
+
+
+.home-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #f9c31b; /* Set the background color for the button */
+  border: 2px solid #000000; /* Set the border color for the button */
+  border-radius: 5px;
+  transition: background-color 0.2s, border 0.2s, transform 0.2s; /* Add smooth transition effects */
+  font-family: 'Merriweather', serif;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+}
+
+.home-button:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  border-color: #333; /* Change border color on hover */
+  transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
+/* Optional: Add media queries to adjust styles for different screen sizes */
+@media (max-width: 768px) {
+  .home-button {
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+#name{
+  font-family: 'Merriweather', serif;
+font-family: 'Oleo Script', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Teko', sans-serif;
+text-decoration: underline;
+display: flex;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+#tag{
+  color: #333;
+  font-family: 'Merriweather', serif;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Teko', sans-serif;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
